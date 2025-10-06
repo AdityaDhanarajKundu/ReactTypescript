@@ -5,6 +5,7 @@ import Greet from "./components/Greet";
 import Button from "./components/Button";
 import Input from "./components/Input";
 import Container from "./components/Container";
+import User from "./components/state/User";
 
 function App() {
   // const personName = {
@@ -35,9 +36,10 @@ function App() {
         <Heading>Oscar goes to Leonardo Dicaprio</Heading>
       </Oscar>
       <Greet name="Aditya" isLoggedIn={false}/> */}
-      <Button handleClick={(event,id) => console.log('Button clicked', event, id)}/>
+      {/* <Button handleClick={(event,id) => console.log('Button clicked', event, id)}/>
       <Input value="" handleChange={(event) => console.log(event) }/>  
-      <Container style={{border: '1px solid black', padding: '1rem'}}/>
+      <Container style={{border: '1px solid black', padding: '1rem'}}/> */}
+      <User />
     </>
   )
 }
