@@ -1,6 +1,8 @@
 import User from "./components/context/User";
 import UserContextProvider from "./components/context/UserContext";
 import {Counter} from "./components/class/Counter";
+import Private from "./components/auth/Private";
+import Profile from "./components/auth/Profile";
 
 function App() {
   // const personName = {
@@ -39,9 +41,9 @@ function App() {
       <ThemeContextProvider>
         <Box />
       </ThemeContextProvider> */}
-      <Counter message="The count value is " />
+      <Private isLoggedIn={true} component={Profile} />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
