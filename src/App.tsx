@@ -1,4 +1,4 @@
-import List from "./components/generics/List";
+import RandomNumber from "./components/restrictions/RandomNumber";
 
 function App() {
   // const personName = {
@@ -37,8 +37,9 @@ function App() {
       <ThemeContextProvider>
         <Box />
       </ThemeContextProvider> */}
-      <List items={['bruce', 'clark', 'diana', 'peter']} onClick={(item) => console.log(item)}/>
-      <List items={[1,2,3]} onClick={(item) => console.log(item)} />  
+      {/* <List items={['bruce', 'clark', 'diana', 'peter']} onClick={(item) => console.log(item)}/>
+      <List items={[1,2,3]} onClick={(item) => console.log(item)} />   */}
+      <RandomNumber value={10} isPositive />
     </>
   );
 }
