@@ -1,4 +1,5 @@
 import RandomNumber from "./components/restrictions/RandomNumber";
+import Toast from "./components/templateLiterals/Toast";
 
 function App() {
   // const personName = {
@@ -40,6 +41,7 @@ function App() {
       {/* <List items={['bruce', 'clark', 'diana', 'peter']} onClick={(item) => console.log(item)}/>
       <List items={[1,2,3]} onClick={(item) => console.log(item)} />   */}
       <RandomNumber value={10} isPositive />
+      <Toast position="center" />
     </>
   );
 }
