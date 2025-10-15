@@ -44,7 +44,7 @@ function App() {
       <RandomNumber value={10} isPositive />
       <Toast position="center" />
       <Button variant="primary" onClick={()=> console.log("clicked")} >
-        <div>Primary Button</div>
+        Primary Button
       </Button>
     </>
   );
