@@ -1,6 +1,7 @@
-import RandomNumber from "./components/restrictions/RandomNumber";
-import Toast from "./components/templateLiterals/Toast";
-import Button from "./components/html/Button";
+// import RandomNumber from "./components/restrictions/RandomNumber";
+// import Toast from "./components/templateLiterals/Toast";
+// import Button from "./components/html/Button";
+import Text from "./components/polymorphic/Text";
 
 function App() {
   // const personName = {
@@ -41,11 +42,20 @@ function App() {
       </ThemeContextProvider> */}
       {/* <List items={['bruce', 'clark', 'diana', 'peter']} onClick={(item) => console.log(item)}/>
       <List items={[1,2,3]} onClick={(item) => console.log(item)} />   */}
-      <RandomNumber value={10} isPositive />
+      {/* <RandomNumber value={10} isPositive />
       <Toast position="center" />
       <Button variant="primary" onClick={()=> console.log("clicked")} >
         Primary Button
-      </Button>
+      </Button> */}
+      <Text as='h1' size="lg">
+        Heading
+      </Text>
+      <Text as='p' size="md">
+        Paragraph
+      </Text>
+      <Text as='label' htmlFor='someId' size="sm" color="primary">
+        Label
+      </Text>
     </>
   );
 }
